@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "623073638897",
+    "project_id": "mynotes-dumb-flutter-backend",
+    "storage_bucket": "mynotes-dumb-flutter-backend.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:623073638897:android:b517e05b223813ee48ac50",
+        "android_client_info": {
+          "package_name": "tn.blueberrybird.mynotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "623073638897-2btoc3d4oci7r8a60mllohecsll2bfd8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSEYGC4a_PfUgH4YaQ0x2X2JTR0oGwNoU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "623073638897-2btoc3d4oci7r8a60mllohecsll2bfd8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "623073638897-tdqgqda3n8grrdvtsec6e761dt81j0nh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "tn.blueberrybird.mynotes"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
