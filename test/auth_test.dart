@@ -1,6 +1,3 @@
-import 'dart:math';
-
-import 'package:flutter/material.dart';
 import 'package:mynotes/services/auth/auth_exceptions.dart';
 import 'package:mynotes/services/auth/auth_provider.dart';
 import 'package:mynotes/services/auth/auth_user.dart';
@@ -38,7 +35,9 @@ void main() {
       );
       expect(
         badEmailUser,
-        throwsA(TypeMatcher<UserNotFoundAuthException>),
+        throwsA(
+          const TypeMatcher<UserNotFoundAuthException>(),
+        ),
       );
       final badPasswordUser = provider.createUser(
         email: "someone@bar.com",
@@ -46,7 +45,9 @@ void main() {
       );
       expect(
         badPasswordUser,
-        throwsA(TypeMatcher<WrongPasswordAuthException>),
+        throwsA(
+          const TypeMatcher<WrongPasswordAuthException>(),
+        ),
       );
       final user = await provider.createUser(
         email: "foo",
@@ -55,8 +56,8 @@ void main() {
       expect(provider.currentUser, user);
       expect(user.isEmailVerified, false);
     });
-
-    test('Email should be able to get verified', () {
+    test('Logged in user should be able to get verified', () {
+      provider.sendEmailVerification();
       final user = provider.currentUser;
       expect(user, isNotNull);
       expect(user!.isEmailVerified, true);
